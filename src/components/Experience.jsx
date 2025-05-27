@@ -59,7 +59,13 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div 
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        variants={textVariant()
+
+      }>
         <p className={`${styles.sectionSubText} text-center`}>
           Here's a glimpse of my journey so far
         </p>

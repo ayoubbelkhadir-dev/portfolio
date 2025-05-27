@@ -10,6 +10,9 @@ import { fadeIn, textVariant } from "../utils/motion";
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
     >
@@ -38,12 +41,19 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div 
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        variants={textVariant()}>
         <p className= {`${styles.sectionSubText} `}  >Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
       <motion.p
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-[#110048] text-[17px] max-w-6xl text-justify leading-[30px]'
       >
@@ -56,7 +66,6 @@ const About = () => {
         Kubernetes, and Jenkins, helping ensure smooth deployment and high-quality code delivery. 
         In addition, I have a strong eye for design, enabling me to collaborate effectively with designers and contribute to the overall user experience.
       </motion.p>
-
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
