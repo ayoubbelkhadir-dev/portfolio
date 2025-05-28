@@ -23,43 +23,46 @@ import {
     fooHealthy,
     shareBook,
     cotoBee,
-    puzzleBear
+    puzzleBear,
+    master,
+    dut,
+    bachelor
   } from "../assets";
   
   export const navLinks = [
     {
       id: "about",
-      title: "About",
+      title: "À propos",
     },
     {
-      id: "work",
-      title: "Work",
+      id: "projets",
+      title: "Projets",
     },
     {
       id: "contact",
       title: "Contact",
     },
   ];
-  
+
   const services = [
     {
-      title: "Java Developer",
+      title: "Développeur Java",
       icon: web,
     },
     {
-      title: "Backend Developer",
+      title: "Développeur Backend",
       icon: mobile,
     },
     {
-      title: "Frontend Developer",
+      title: "Développeur Frontend",
       icon: web,
     },
     {
-      title: "Web Developer",
+      title: "Développeur Web",
       icon: mobile,
     },
     {
-      title: "Mobile Developer",
+      title: "Développeur Mobile",
       icon: backend,
     },
     {
@@ -71,10 +74,27 @@ import {
       icon: creator,
     },
     {
-      title: "3D Modeler",
+      title: "Modélisateur 3D",
       icon: creator,
     },
   ];
+
+    const formations = [
+    {
+      title: "Ingénieur expert en informatique et systèmes d’information",
+      icon: master,
+    },
+    {
+      title: "Bachelor Concepteur Développeur d’application Bac+3",
+      icon: bachelor,
+    },
+    {
+      title: "Diplôme universitaire de technologie Génie Informatique Bac+2",
+      icon: dut,
+    },
+  ];
+
+
   
   const technologies = [
     {
@@ -129,242 +149,137 @@ import {
   ];
   
   const experiences = [
-    {
-      title: "Full Stack Develope",
-      company_name: "Sopra Steria",
-      icon: sopra,
-      iconBg: "white",
-      date: "September 2022 - October 2024 ",
-      points: [
-        "Developed and maintained full-stack applications using Java (Spring Boot) and Angular to support enterprise ERP systems.",
-        "Improved existing backend services and implemented new business features using REST APIs, Hibernate, and MySQL/PostgreSQL.",
-        "Built dynamic and responsive user interfaces with Angular, ensuring smooth interaction and modern UX for internal users.",
-        "Enhanced and debugged Oracle Forms and PL/SQL maintenance files for the core ERP modules, ensuring stability and performance.",
-        "Fixed major security vulnerabilities (XSS, SQL injections) identified by Checkmarx, ensuring compliance with security standards.",
-        "Redesigned and optimized internal intranet systems using Joomla, PHP, JavaScript, and PowerShell for better information management.",
-        "Created custom dashboards in Power BI for IT performance monitoring and strategic decision-making using Power Query and DAX.",
-        "Worked in a DevOps environment with tools like Maven, Jenkins, Kubernetes, and Swagger for CI/CD and API documentation.",
-      ],
-    },
-    {
-      title: "Mobile Developer",
-      company_name: "Freelancer",
-      icon: freelance,
-      iconBg: "white",
-      date: "September 2021 - August 2022",
-      points: [
-      "Designed and launched cross-platform mobile applications for Android and iOS using React Native, Java, Kotlin, and Swift.",
-      "Integrated backend services with Firebase, REST APIs, and GraphQL to deliver scalable and interactive user experiences.",
-      "Collaborated with clients to turn ideas into interactive prototypes and polished UI designs using Figma and Adobe tools.",
-      "Created immersive 3D visuals and animations for apps using Blender and Unity, enhancing user engagement.",
-      ],
-    },
-    {
-      title: "Network Administrator",
-      company_name: "EST",
-      icon: est,
-      iconBg: "white",
-      date: "April 2020 - May 2020",
-      points: [
-        "Configured and maintained secure Linux-based server environments using Ubuntu and CentOS.",
-        "Automated system setup and network configuration with Ansible and Bash scripting to increase deployment efficiency.",
-        "Simulated complex network topologies using Cisco Packet Tracer and ensured service continuity with Docker and VirtualBox.",
-        "Deployed web servers with Nginx and Apache, and secured remote access with OpenSSH.",
-      ],
-    },
-    {
-      title: "Full Stack Developer",
-      company_name: "OFPPT",
-      icon: ofppt,
-      iconBg: "white",
-      date: "July 2019 - August 2019",
-      points: [
-      "Developed full-stack web applications using Java JEE, Spring, Angular, and React.js for academic and administrative systems.",
-      "Implemented RESTful APIs and connected databases (MySQL, PostgreSQL, MongoDB) to ensure smooth data exchange.",
-      "Utilized modern DevOps practices including Git version control, Jenkins CI/CD pipelines, and Kubernetes orchestration.",
-      "Delivered user-friendly interfaces with responsive design using HTML, CSS, and TypeScript.",
-      ],
-    },
-  ];
+  {
+    title: "Développeur Full Stack",
+    company_name: "Sopra Steria",
+    icon: sopra,
+    iconBg: "white",
+    date: "Septembre 2022 - Octobre 2024",
+    points: [
+      "Développement et maintenance d'applications full-stack en Java (Spring Boot) et Angular pour des systèmes ERP.",
+      "Amélioration des services backend existants et implémentation de nouvelles fonctionnalités métier via des API REST, Hibernate, MySQL/PostgreSQL.",
+      "Création d'interfaces utilisateur dynamiques et réactives avec Angular, assurant une expérience moderne et fluide.",
+      "Maintenance et débogage des fichiers Oracle Forms et PL/SQL pour garantir la stabilité et la performance du cœur ERP.",
+      "Correction de vulnérabilités de sécurité majeures (XSS, injections SQL) détectées par Checkmarx pour assurer la conformité.",
+      "Refonte et optimisation de l'intranet interne avec Joomla, PHP, JavaScript et PowerShell pour une meilleure gestion de l'information.",
+      "Création de tableaux de bord personnalisés sous Power BI pour le suivi IT et la prise de décision stratégique avec Power Query et DAX.",
+      "Travail en environnement DevOps avec Maven, Jenkins, Kubernetes et Swagger pour le CI/CD et la documentation API.",
+    ],
+  },
+  {
+    title: "Développeur Mobile",
+    company_name: "Freelance",
+    icon: freelance,
+    iconBg: "white",
+    date: "Septembre 2021 - Août 2022",
+    points: [
+      "Conception et lancement d'applications mobiles multiplateformes pour Android et iOS avec React Native, Java, Kotlin et Swift.",
+      "Intégration de services backend via Firebase, API REST et GraphQL pour des expériences utilisateurs interactives et évolutives.",
+      "Collaboration avec les clients pour transformer des idées en prototypes interactifs et designs UI aboutis avec Figma et Adobe.",
+      "Création de visuels et animations 3D immersifs pour les applications avec Blender et Unity pour renforcer l'engagement.",
+    ],
+  },
+  {
+    title: "Administrateur Réseau",
+    company_name: "EST",
+    icon: est,
+    iconBg: "white",
+    date: "Avril 2020 - Mai 2020",
+    points: [
+      "Configuration et maintenance d'environnements serveurs Linux sécurisés (Ubuntu, CentOS).",
+      "Automatisation de l'installation système et de la configuration réseau avec Ansible et scripts Bash.",
+      "Simulation de topologies réseau complexes avec Cisco Packet Tracer et garantie de continuité de service avec Docker et VirtualBox.",
+      "Déploiement de serveurs web avec Nginx et Apache, sécurisation de l'accès distant avec OpenSSH.",
+    ],
+  },
+  {
+    title: "Développeur Full Stack",
+    company_name: "OFPPT",
+    icon: ofppt,
+    iconBg: "white",
+    date: "Juillet 2019 - Août 2019",
+    points: [
+      "Développement d'applications web full-stack en Java JEE, Spring, Angular et React.js pour les systèmes académiques et administratifs.",
+      "Implémentation d’API RESTful et gestion de bases de données (MySQL, PostgreSQL, MongoDB).",
+      "Utilisation des pratiques DevOps modernes : Git, Jenkins (CI/CD), Kubernetes.",
+      "Création d’interfaces utilisateurs responsives avec HTML, CSS, TypeScript.",
+    ],
+  },
+];
   
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
+
   
-  const projects = [
-    {
-      name: "Student Payment Management",
-      description:
-        "A web application designed to manage student payments, including registration, payment tracking, receipt generation, and secure authentication. Built to streamline administrative processes in educational institutions.",
-      tags: [
-        {
-          name: "angular",
-          color: "orange-text-gradient",
-        },
-        {
-          name: "angular material",
-          color: "orange-text-gradient",
-        },
-        {
-          name: "spring boot",
-          color: "green-text-gradient",
-        },
-        {
-          name: "spring security",
-          color: "green-text-gradient",
-        },
-        {
-          name: "hibernate",
-          color: "blue-text-gradient",
-        },
-
-      ],
-      image: gestionStudent,
-      source_code_link: "https://github.com/ayoubbelkhadir-dev/student-management",
-    },
-    {
-      name: "FooHealthy",
-      description:
-        "An application with a Java Spring Boot backend and an Angular frontend that allows users to share and discover healthy recipes. The goal is to make access to healthy and varied recipes easy to promote balanced eating.",
-      tags: [
-        {
-          name: "angular",
-          color: "orange-text-gradient",
-        },
-        {
-          name: "angular material",
-          color: "orange-text-gradient",
-        },
-        {
-          name: "spring boot",
-          color: "green-text-gradient",
-        },
-        {
-          name: "spring security",
-          color: "green-text-gradient",
-        },
-        {
-          name: "hibernate",
-          color: "blue-text-gradient",
-        },
-
-      ],
-      image: fooHealthy,
-      source_code_link: "https://github.com/ayoubbelkhadir-dev/Foohealthy",
-    },
-    {
-      name: "Share Book",
-      description:
-        "A full-stack application with a Java Spring Boot backend and an Angular frontend that allows users to share books and printers with others. The platform enables easy sharing and management of resources among users.",
-      tags: [
-        {
-          name: "angular",
-          color: "orange-text-gradient",
-        },
-        {
-          name: "angular material",
-          color: "orange-text-gradient",
-        },
-        {
-          name: "spring boot",
-          color: "green-text-gradient",
-        },
-        {
-          name: "spring security",
-          color: "green-text-gradient",
-        },
-        {
-          name: "hibernate",
-          color: "blue-text-gradient",
-        },
-
-      ],
-      image: shareBook,
-      source_code_link: "https://github.com/ayoubbelkhadir-dev/share-book",
-    },
-    {
-      name: "Puzzle bear",
-      description:
-        "Puzzle Bear is a mobile puzzle game designed for Android devices. Players assemble pieces to complete charming images featuring a cute bear in various scenes. The game includes multiple difficulty levels, making it fun and challenging for users of all ages while improving their logic and observation skills",
-      tags: [
-        {
-          name: "Java",
-          color: "orange-text-gradient",
-        },
-        {
-          name: "Android studio",
-          color: "orange-text-gradient",
-        },
-        {
-          name: "Java Script",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Css",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Ilustrator",
-          color: "blue-text-gradient",
-        },
-
-      ],
-      image: puzzleBear,
-      source_code_link: "https://github.com/ayoubbelkhadir-dev/Puzzle-bear",
-    },
-        {
-      name: "Coto bee",
-      description:
-        "Coto Bee is a fun and colorful bubble shooter game for Android. Help the little bee pop all the bubbles by matching three or more of the same color. Aim carefully, plan your shots, and clear the board to move on to the next level!",
-      tags: [
-        {
-          name: "Java",
-          color: "orange-text-gradient",
-        },
-        {
-          name: "Android studio",
-          color: "orange-text-gradient",
-        },
-        {
-          name: "Java Script",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Css",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Ilustrator",
-          color: "blue-text-gradient",
-        },
-
-      ],
-      image: cotoBee,
-      source_code_link: "https://github.com/ayoubbelkhadir-dev/Coto-bee",
-    },
-  ];
+ const projects = [
+  {
+    name: "Gestion des paiements étudiants",
+    description:
+      "Une application web conçue pour gérer les paiements des étudiants, incluant l'inscription, le suivi des paiements, la génération de reçus et une authentification sécurisée. Conçue pour simplifier les processus administratifs des établissements.",
+    tags: [
+      { name: "angular", color: "orange-text-gradient" },
+      { name: "angular material", color: "orange-text-gradient" },
+      { name: "spring boot", color: "green-text-gradient" },
+      { name: "spring security", color: "green-text-gradient" },
+      { name: "hibernate", color: "blue-text-gradient" },
+    ],
+    image: gestionStudent,
+    source_code_link: "https://github.com/ayoubbelkhadir-dev/student-management",
+  },
+  {
+    name: "FooHealthy",
+    description:
+      "Une application avec un backend Java Spring Boot et un frontend Angular permettant aux utilisateurs de partager et découvrir des recettes saines. L’objectif est de promouvoir une alimentation équilibrée facilement accessible.",
+    tags: [
+      { name: "angular", color: "orange-text-gradient" },
+      { name: "angular material", color: "orange-text-gradient" },
+      { name: "spring boot", color: "green-text-gradient" },
+      { name: "spring security", color: "green-text-gradient" },
+      { name: "hibernate", color: "blue-text-gradient" },
+    ],
+    image: fooHealthy,
+    source_code_link: "https://github.com/ayoubbelkhadir-dev/Foohealthy",
+  },
+  {
+    name: "Share Book",
+    description:
+      "Une application full-stack avec un backend Java Spring Boot et un frontend Angular permettant aux utilisateurs de partager des livres et des imprimantes. La plateforme facilite la gestion et le partage de ressources.",
+    tags: [
+      { name: "angular", color: "orange-text-gradient" },
+      { name: "angular material", color: "orange-text-gradient" },
+      { name: "spring boot", color: "green-text-gradient" },
+      { name: "spring security", color: "green-text-gradient" },
+      { name: "hibernate", color: "blue-text-gradient" },
+    ],
+    image: shareBook,
+    source_code_link: "https://github.com/ayoubbelkhadir-dev/share-book",
+  },
+  {
+    name: "Puzzle Bear",
+    description:
+      "Puzzle Bear est un jeu de puzzle mobile pour Android. Les joueurs doivent assembler des pièces pour compléter des images adorables mettant en scène un ours. Le jeu propose plusieurs niveaux de difficulté et aide à développer la logique et l’observation.",
+    tags: [
+      { name: "Java", color: "orange-text-gradient" },
+      { name: "Android studio", color: "orange-text-gradient" },
+      { name: "Java Script", color: "green-text-gradient" },
+      { name: "Css", color: "green-text-gradient" },
+      { name: "Ilustrator", color: "blue-text-gradient" },
+    ],
+    image: puzzleBear,
+    source_code_link: "https://github.com/ayoubbelkhadir-dev/Puzzle-bear",
+  },
+  {
+    name: "Coto Bee",
+    description:
+      "Coto Bee est un jeu de bulles coloré et amusant pour Android. Aidez la petite abeille à éclater les bulles en alignant trois bulles de la même couleur. Visez bien, planifiez vos tirs, et passez au niveau suivant !",
+    tags: [
+      { name: "Java", color: "orange-text-gradient" },
+      { name: "Android studio", color: "orange-text-gradient" },
+      { name: "Java Script", color: "green-text-gradient" },
+      { name: "Css", color: "green-text-gradient" },
+      { name: "Ilustrator", color: "blue-text-gradient" },
+    ],
+    image: cotoBee,
+    source_code_link: "https://github.com/ayoubbelkhadir-dev/Coto-bee",
+  },
+];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects,formations };

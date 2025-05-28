@@ -1,4 +1,7 @@
 import logo from "./logo.svg";
+import master from "./master.svg";
+import bachelor from "./bachelor.svg";
+import dut from "./dut.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -68,5 +71,8 @@ export {
   fooHealthy,
   shareBook,
   cotoBee,
-  puzzleBear
+  puzzleBear,
+  master,
+  bachelor,
+  dut
 };

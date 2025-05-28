@@ -47,7 +47,7 @@ const About = () => {
         viewport={{ once: false, amount: 0.25 }}
         variants={textVariant()}>
         <p className= {`${styles.sectionSubText} `}  >Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>Présentation.</h2>
       </motion.div>
 
       <motion.p
@@ -57,14 +57,14 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-[#110048] text-[17px] max-w-6xl text-justify leading-[30px]'
       >
-        I'm a skilled software developer with experience across both front-end and back-end development.
-        I have worked with technologies such as Java, Angular, React, JavaScript, PHP, and Unity,
-        allowing me to build dynamic web and mobile applications. As a Web Developer and Mobile Developer,
-        I’ve contributed to creating user-friendly interfaces and responsive designs. On the back-end side,
-        I specialize in Java development and have implemented efficient, scalable solutions.
-        I also have DevOps experience, with knowledge of CI/CD pipelines, automated testing,
-        Kubernetes, and Jenkins, helping ensure smooth deployment and high-quality code delivery. 
-        In addition, I have a strong eye for design, enabling me to collaborate effectively with designers and contribute to the overall user experience.
+        Développeur logiciel expérimenté, je maîtrise à la fois le développement front-end et back-end.
+        J’ai travaillé avec des technologies telles que Java, Angular, React, JavaScript, PHP et Unity, 
+        ce qui me permet de concevoir des applications web et mobiles dynamiques. 
+        En tant que développeur web et mobile, j’ai contribué à la création d’interfaces intuitives et de designs responsives. 
+        Côté back-end, je suis spécialisé en développement Java, avec la mise en place de solutions performantes et évolutives. 
+        Par ailleurs, je possède des compétences en DevOps, notamment dans les pipelines CI/CD, les tests automatisés, Kubernetes et Jenkins, 
+        assurant ainsi un déploiement fluide et une livraison de code de haute qualité. 
+        Enfin, mon sens du design me permet de collaborer efficacement avec les équipes créatives pour améliorer l’expérience utilisateur globale.
       </motion.p>
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
