@@ -3,7 +3,15 @@ import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
-import characterGif from '../assets/caracter.webm'
+import characterSafari from '../assets/caracter.mov'
+import characterOther from '../assets/caracter.webm'
+
+const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+const videoSrc = isSafari
+  ? characterSafari
+  : characterOther;
+
 const Hero = () => {
   return (
     <section className='relative w-full h-screen mx-auto'> 
@@ -22,8 +30,9 @@ const Hero = () => {
         </p>
       </div>
       <div>
+        
       <video
-        src={characterGif}
+        src={videoSrc}
         autoPlay
         muted
         playsInline
