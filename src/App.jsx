@@ -6,7 +6,7 @@ const  App= () => {
   return (
     <BrowserRouter>
      <div className="relative z-0 bg-[#6dd1ff]">
-      <div className="bg-cover bg-no-repeat bg-center bg-fixed bg-top bg-primary "
+      <div className="bg-cover bg-no-repeat bg-center  bg-top bg-primary min-h-screen"
       style={{ backgroundImage: `url(${heroBg})`}}
       > 
         <Navbar/>
