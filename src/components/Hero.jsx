@@ -16,8 +16,8 @@ const Hero = () => {
       <div>
         <h1 className={`${styles.heroHeadText} text-white  `}>Ayoub <span className='text-[#a1b6ff]'>Belkhadir</span> </h1>
         <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-        Développeur Full-Stack & Designer
-        <br className='sm:block hidden'/>
+        Développeur Full-Stack & Designer 
+        <br/>
         Des interfaces fluides, du code robuste.     
         </p>
       </div>
@@ -27,7 +27,7 @@ const Hero = () => {
         autoPlay
         muted
         playsInline
-        className="w-[300px] sm:w-[150px] md:w-[250px] h-auto object-contain pointer-events-none select-none"
+        className="w-[300px] sm:w-[150px] md:w-[250px] h-auto object-contain pointer-events-none select-none bg-transparent"
       />
       </div>
     </div>
